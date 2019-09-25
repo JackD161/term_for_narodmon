@@ -19,8 +19,8 @@ DallasTemperature sensors(&ds);
 Ticker flipper;
 
 
-const char* ssid     = "sinkhrofazatron7";
-const char* password = "LOLytukbycrfz37IfhfirbyjAflttdf20";
+const char* ssid     = "SSID";
+const char* password = "PASSWORD";
 
 const char* host = "narodmon.ru";
 const int httpPort = 8283;
@@ -91,9 +91,9 @@ void Send() {
   client.print("#");
   client.print(WiFi.macAddress()); // отправляем МАС нашей ESP8266
   client.print("#");
-  client.print("neglinskaya37"); // название устройства
+  client.print("DEVICE_NAME"); // название устройства
   client.print("#");
-  client.print("47.7218#40.291"); // координаты местонахождения датчика
+  client.print("LATITUDE#LONGITUDE"); // координаты местонахождения датчика
   client.println();
 
       // в цикле отправляем данные с подключенных градусников.
